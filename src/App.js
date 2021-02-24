@@ -61,7 +61,7 @@ class App extends Component {
           <Carousel>
            {sources.map(source => (
            <div  key={source.id+'a'}>
-            <img key={source.id} src={process.env.PUBLIC_URL+source.url} alt={source.description} />
+            <img key={source.id} src={process.env.PUBLIC_URL+'/'+source.url} alt={source.description} />
             <div className="legend stage">
               <div className="spinner">
                 <span className="title">{source.title}</span> <span>{source.description}</span><br />
